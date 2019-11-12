@@ -1,0 +1,166 @@
+
+@font-face {
+    font-family: Lobster;
+    font-weight: normal;
+    src: url("Lobster Regular.ttf");
+}
+
+body {
+    background-color: #4dcbcc;
+    font-family: "Courier New", monospace;
+    font-size: smaller;
+}
+
+.main_table {
+    width: 100%;
+}
+
+.main_table > tr > td, .main_table > tbody > tr > td {
+    text-align: center;
+}
+
+.control {
+    border-collapse: collapse;
+}
+
+.control > tr > td, .control > tbody > tr > td {
+    margin: 10%;
+    border: 15px solid transparent;
+    text-align: center;
+}
+
+.graph-view {
+    cursor: pointer;
+    width: 500px;
+    margin: 0 20px;
+}
+
+.amazing-checkbox {
+    display: inline-block;
+    border: medium dotted black;
+    position: relative;
+}
+
+.amazing-checkbox > label {
+    display: inline-block;
+}
+
+.amazing-checkbox > label > input {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.amazing-checkbox > label > span {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    line-height: 25px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.amazing-checkbox > label > input:checked ~ span {
+    background: url("../img/paw.png") center/contain no-repeat;
+}
+
+.panel_r {
+    white-space: nowrap;
+
+}
+
+.panel_r input {
+    font-family: "Courier New";
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 150px;
+    height: 150px;
+    border: 2px solid cadetblue;
+    border-radius: 100px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #74d6d6, #34b3b3);
+    font-family: "Comic Sans MS", cursive;
+    font-size: larger;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.submit-btn:hover {
+    border-color: darkcyan;
+}
+
+.submit-btn:active {
+    background: linear-gradient(to bottom, #34b3b3, #74d6d6);
+}
+
+.header {
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+}
+
+.header, .header * {
+    font-family: Lobster, Serif, serif;
+    font-size: x-large;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#header_image {
+    pointer-events: none;
+}
+
+#graph {
+    user-select: none;
+}
+
+#result_frame {
+    width: 100%;
+    height: 0;
+    border: none;
+    user-select: none;
+}
+
+#errors {
+    position: absolute;
+    top: 33%;
+    right: 9%;
+    width: 50%;
+    text-align: right;
+}
+
+input[type="hidden"][name="r"][value="1"] ~ input[type="button"][name="r"][value="1"],
+input[type="hidden"][name="r"][value="2"] ~ input[type="button"][name="r"][value="2"],
+input[type="hidden"][name="r"][value="3"] ~ input[type="button"][name="r"][value="3"],
+input[type="hidden"][name="r"][value="4"] ~ input[type="button"][name="r"][value="4"],
+input[type="hidden"][name="r"][value="5"] ~ input[type="button"][name="r"][value="5"] {
+    font-weight: bold;
+    color: navy;
+}
+
+#fix {
+
+    width: 175px;
+    height: 220px;
+    position: fixed;
+    bottom: -1px;
+    right: -1px;
+    background-image: url("../error/cat.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    visibility: hidden;
+}

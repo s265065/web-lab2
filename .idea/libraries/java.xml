@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/jsass-master/example/webapp/src/main/java" />
+      <root url="file://$PROJECT_DIR$/jsass-master/src/main/java" />
+      <root url="file://$PROJECT_DIR$/jsass-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
